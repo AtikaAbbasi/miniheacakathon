@@ -8,36 +8,7 @@ import {
    
   } from '../config.js';
   
-//   // ==== SIGN UP CODE ====
-  
-//   const signupForm = document?.getElementById("sign-up"); // Form ka ID
-  
-//   signupForm?.addEventListener("submit", async (e) => {
-//     e.preventDefault(); // Page refresh rokta hai
-//     console.log("Signup Form Submitted");
-  
-//     const email = document.getElementById("email");
-//     const password = document.getElementById("password");
-//     const username = document.getElementById("name");
-  
-//     try {
-//       const userCredential = await createUserWithEmailAndPassword(auth, email.value, password.value);
-//       const user = userCredential.user;
-//       console.log("User Created:", user);
-//       console.log("Username:", username.value);
-  
-//       // Send Email Verification
-//     //   await sendEmailVerification(user);
-//       alert('Verification Email Sent! Please verify your email.');
-  
-//       // Page redirect after signup
-//       window.location.href = "/html/todo.html";
-  
-//     } catch (error) {
-//       console.error("Signup Error:", error.message);
-//       alert(error.message);
-//     }
-//   });
+
  
 
 
