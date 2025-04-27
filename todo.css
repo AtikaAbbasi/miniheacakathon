@@ -1,0 +1,143 @@
+
+    /* todo css................................. */
+
+  /* General Styles */
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+
+  
+  .container {
+    width: 400px !important;
+     /* Max width for large screens */
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box; /* Make sure padding doesn't affect width */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+  }
+  
+  input[type="text"] {
+    width: 100%;  
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    width: 100%;  /* Button stretches to full width */
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .todo-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  .todo-item {
+    background-color: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .todo-item button {
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .todo-item button:hover {
+    background-color: #ff4500;
+  }
+  
+  /* Responsive Styling */
+  @media screen and (max-width: 768px) {
+    .container {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    h1 {
+      font-size: 22px;
+    }
+  
+    input[type="text"], button {
+      font-size: 14px;
+    }
+  
+    .todo-item {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .todo-item button {
+      padding: 5px 8px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 18px;
+    }
+  
+    .container {
+      margin: 5px;
+      padding: 10px;
+    }
+  
+    input[type="text"], button {
+      font-size: 12px;
+    }
+  
+    .todo-item {
+      padding: 8px;
+    }
+  
+    .todo-item button {
+      padding: 5px 8px;
+    }
+  }
+  
+  
+  
+  
+  
+  
