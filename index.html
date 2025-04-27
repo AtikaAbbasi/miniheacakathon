@@ -13,11 +13,51 @@
 
  <link rel="stylesheet" href="/style.css">
 </head>
+<style>
+
+    body{
+        background-image: url(https://i.pinimg.com/736x/e7/3d/21/e73d21665470f0047ef42dbe3e43021e.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .card{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 2px solid rgb(0, 191, 255);
+    }
+
+    .card:hover{
+        box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+    }
+
+
+
+
+    @keyframes zoomFadeSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(0, 191, 255);
+    animation: zoomFadeSlide 1s ease forwards;
+}
+
+.card:hover {
+    box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+}
+</style>
 <body>
 
 
 
-    <!-- .........................NAVBAR...........................-->
+
 
 
 
@@ -54,7 +94,7 @@
                     <label class="form-label">Password</label>
                     <input type="password" class="form-control" id="password" placeholder="Create a password">
                 </div>
-                <button type="button" id="test" class="btn btn-success w-100">Sign Up</button>
+                <button type="button" id="test" class="btn btn-info w-100">Sign Up</button>
                 <p class="text-center mt-3">Already have an account? <a href="./html/login.html" class="text-decoration-none">Login</a></p>
             </form>
         </div>
@@ -67,8 +107,7 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js" integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+" crossorigin="anonymous"></script>
 
-<!-- <script type="module" src="./app.js"></script>
-<script type="module" src="./auth.js"></script> -->
+
 <script type="module" src="./js/sigin.js"></script>
 
 

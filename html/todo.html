@@ -3,19 +3,67 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <link rel="stylesheet" href="/todo.css">
   <title>Todo App</title>
 
 
 </head>
+<style>
+
+    body{
+        background-image: url(https://i.pinimg.com/736x/e7/3d/21/e73d21665470f0047ef42dbe3e43021e.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .container{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 2px solid rgb(0, 191, 255);
+    }
+
+    .container:hover{
+        box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+    }
+
+
+
+    @keyframes zoomFadeSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.container {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(0, 191, 255);
+    animation: zoomFadeSlide 1s ease forwards;
+}
+
+.container:hover {
+    box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+}
+
+
+
+    
+</style>
 <body>
   <div class="container">
     <h1>Todo App</h1>
     <input type="text" id="taskInput" placeholder="Add a new task">
-    <button id="addTaskBtn">Add Task</button>
+    <button class="btn btn-info" id="addTaskBtn">Add Task</button>
     <ul class="todo-list" id="todoList"></ul>
 
-    <button id="sigout" class="btn btn-success w-100 mx-auto">SigOut</button>
+    <button id="sigout" class="btn btn-info w-100 mx-auto">SigOut</button>
   </div>
 
 

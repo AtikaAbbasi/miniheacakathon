@@ -22,7 +22,7 @@ async function addTask(task) {
 async function deleteTask(taskId) {
   try {
     await deleteDoc(doc(db, "todos", taskId));
-    console.log("Task deleted: ", taskId);
+    alert("Task deleted: ", taskId);
   } catch (e) {
     console.error("Error deleting task: ", e);
   }
@@ -100,7 +100,7 @@ sigout?.addEventListener('click', ()  => {
   signOut(auth)
   alert(' user loged out')
   if (window.location?.pathname === '/html/profile.html') {
-    window.location.replace('/index.html')
+    window.location.replace('/')
 }
 
 });

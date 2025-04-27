@@ -7,6 +7,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
+<style>
+
+    body{
+        background-image: url(https://i.pinimg.com/736x/e7/3d/21/e73d21665470f0047ef42dbe3e43021e.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        border: 2px solid rgb(0, 191, 255);
+    }
+
+    .card:hover{
+        box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+    }
+
+
+
+    @keyframes zoomFadeSlide {
+  0% {
+    opacity: 0;
+    transform: scale(0.8) translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border: 2px solid rgb(0, 191, 255);
+    animation: zoomFadeSlide 1s ease forwards;
+}
+
+.card:hover {
+    box-shadow: rgba(4, 80, 121, 0.884) 0px 5px 15px !important;
+}
+
+
+
+
+
+
+</style>
 <body>
  <!-- Main Box -->
  <div class="main"> 
@@ -33,13 +79,14 @@
                     <input type="password" class="form-control" id="password" placeholder="Create a password">
 
                 </div>
-                <button type="submit" class="btn btn-success w-100">Submit</button>
+                <button type="submit" class="btn btn-info w-100">Submit</button>
                 
                 
                 <p class="text-center mt-3">OR</p>
              
-              <button id="siginwithgoogle" class="btn btn-success w-100">Continue  with google</button>
+              <button id="siginwithgoogle" class="btn btn-info w-100">Continue  with google</button>
 
+              <a class="login-styling" href="/index.html">sign-up</a>
             </form>
         </div>
     
