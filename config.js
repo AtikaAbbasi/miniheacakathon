@@ -16,6 +16,7 @@ import { getAuth,
   signOut,
   onAuthStateChanged,
   updatePassword,
+  
  } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js'
 
 //FIREBASE-STORE//

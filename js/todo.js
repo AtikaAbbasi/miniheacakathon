@@ -1,5 +1,5 @@
 
-import { db, collection, addDoc, onSnapshot, deleteDoc, doc } from "../config.js";
+import {auth, db, collection, addDoc, onSnapshot, deleteDoc, doc,signOut } from "../config.js";
 
 const taskInput = document.getElementById("taskInput");
 const addTaskBtn = document.getElementById("addTaskBtn");
@@ -90,6 +90,20 @@ renderTasks();
 
 
 
+
+// sigOut code //////////////////////////////////////////////////////////////
+
+let sigout = document.getElementById('sigout')
+
+sigout?.addEventListener('click', ()  => {
+
+  signOut(auth)
+  alert(' user loged out')
+  if (window.location?.pathname === '/html/profile.html') {
+    window.location.replace('/index.html')
+}
+
+});
 
 
 
