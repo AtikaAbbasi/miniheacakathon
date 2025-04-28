@@ -8,14 +8,10 @@ import { initializeApp } from 'https://www.gstatic.com/firebasejs/11.6.0/firebas
 import { getAuth,
    
   createUserWithEmailAndPassword ,
-  signInWithEmailAndPassword,
-  sendPasswordResetEmail,
-  sendEmailVerification 
+  signInWithEmailAndPassword
   ,GoogleAuthProvider,
   signInWithPopup,
   signOut,
-  onAuthStateChanged,
-  updatePassword,
   
  } from 'https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js'
 
@@ -59,13 +55,9 @@ export{
     auth,
     createUserWithEmailAndPassword,
     signInWithEmailAndPassword,
-    sendPasswordResetEmail,
-    sendEmailVerification ,
     GoogleAuthProvider,
     signInWithPopup,
     signOut,
-    onAuthStateChanged,
-    updatePassword,
   
   // firstore
     getFirestore,

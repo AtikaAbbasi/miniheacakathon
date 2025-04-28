@@ -1,6 +1,9 @@
 import{
     auth,
-    signInWithEmailAndPassword,
+    signInWithEmailAndPassword
+    ,GoogleAuthProvider,
+    signInWithPopup,
+    signOut,
    
 }from '../config.js'
 
@@ -31,6 +34,33 @@ logIn?.addEventListener("submit", async (e) => {
   }
 
 });
+
+
+
+
+
+let loginwithGoogle = document.getElementById('google')
+
+
+let provider = new  GoogleAuthProvider()
+provider.setCustomParameters({prompt : "select_account"})
+
+loginwithGoogle.addEventListener("click" , async () =>{
+
+try {
+    
+    await signOut(auth)
+console.log('user tired to sign In');
+let result = await signInWithPopup(auth,provider)
+
+
+} catch (error) {
+    console.log(error ,'mila hai');
+    
+}
+
+
+})
 
 
 
